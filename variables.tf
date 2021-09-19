@@ -1,0 +1,9 @@
+variable region {}
+variable access_key {}
+variable secret_key {}
+variable lambda_function_name {}
+variable lambda_description {}
+variable lambda_handler {}
+variable lambda_runtime {}
+variable lambda_source_path {}
+variable kinesis_stream {}
