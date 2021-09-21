@@ -8,3 +8,5 @@ lambda_runtime       = "python3.8"
 lambda_source_path = "function.zip"
 # Kinesis
 kinesis_stream = "application-logs-stream"
+kinesis_shard_count = 1
+kinesis_retention_period = 6
