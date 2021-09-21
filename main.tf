@@ -6,6 +6,16 @@ terraform {
   }
 }
 
+module "kinesis_stream" {
+  source = "github.com/PhilRanzato/terraform-module-kinesis"
+
+  region = var.region
+
+  kinesis_stream = var.kinesis_stream
+  kinesis_shard_count = var.kinesis_shard_count
+  kinesis_retention_period = var.kinesis_retention_period
+}
+
 module "lambda_function" {
   source = "github.com/PhilRanzato/terraform-module-lambda-aws"
 
@@ -19,5 +29,5 @@ module "lambda_function" {
   lambda_source_path = var.lambda_source_path
 
   # Kinesis
-  kinesis_stream = var.kinesis_stream
+  kinesis_stream = "${module.kinesis_stream.stream-name}"
 }

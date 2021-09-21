@@ -7,3 +7,5 @@ variable lambda_handler {}
 variable lambda_runtime {}
 variable lambda_source_path {}
 variable kinesis_stream {}
+variable kinesis_shard_count {}
+variable kinesis_retention_period {}
