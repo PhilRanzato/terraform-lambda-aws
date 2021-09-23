@@ -9,3 +9,6 @@ variable lambda_source_path {}
 variable kinesis_stream {}
 variable kinesis_shard_count {}
 variable kinesis_retention_period {}
+variable dynamodb_table_name {}
+variable dynamodb_table_hash_key {}
+variable dynamodb_table_hash_key_type {}
