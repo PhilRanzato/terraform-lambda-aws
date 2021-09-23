@@ -10,3 +10,7 @@ lambda_source_path = "function.zip"
 kinesis_stream = "production-application-logs-stream"
 kinesis_shard_count = 1
 kinesis_retention_period = 24
+# DynamoDB
+dynamodb_table_name = "production-application-logs-table"
+dynamodb_table_hash_key = "id"
+dynamodb_table_hash_key_type = "S"

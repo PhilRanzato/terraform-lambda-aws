@@ -16,6 +16,16 @@ module "kinesis_stream" {
   kinesis_retention_period = var.kinesis_retention_period
 }
 
+module "dynamodb_table" {
+  source = "github.com/PhilRanzato/terraform-module-dynamodb"
+
+  region = var.region
+
+  dynamodb_table_name = var.dynamodb_table_name
+  dynamodb_table_hash_key = var.dynamodb_table_hash_key
+  dynamodb_table_hash_key_type = var.dynamodb_table_hash_key_type
+}
+
 module "lambda_function" {
   source = "github.com/PhilRanzato/terraform-module-lambda-aws"
 
