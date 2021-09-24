@@ -24,6 +24,9 @@ module "dynamodb_table" {
   dynamodb_table_name = var.dynamodb_table_name
   dynamodb_table_hash_key = var.dynamodb_table_hash_key
   dynamodb_table_hash_key_type = var.dynamodb_table_hash_key_type
+  dynamodb_table_billing_mode = var.dynamodb_table_billing_mode
+  dynamodb_table_read_capacity = var.dynamodb_table_read_capacity
+  dynamodb_table_write_capacity = var.dynamodb_table_write_capacity
 }
 
 module "lambda_function" {

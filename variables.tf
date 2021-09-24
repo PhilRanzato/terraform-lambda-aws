@@ -12,3 +12,6 @@ variable kinesis_retention_period {}
 variable dynamodb_table_name {}
 variable dynamodb_table_hash_key {}
 variable dynamodb_table_hash_key_type {}
+variable dynamodb_table_billing_mode {}
+variable dynamodb_table_read_capacity {}
+variable dynamodb_table_write_capacity {}
