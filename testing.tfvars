@@ -14,3 +14,6 @@ kinesis_retention_period = 24
 dynamodb_table_name = "application-logs-table"
 dynamodb_table_hash_key = "id"
 dynamodb_table_hash_key_type = "S"
+dynamodb_table_billing_mode = "PROVISIONED"
+dynamodb_table_read_capacity = 20
+dynamodb_table_write_capacity = 20
